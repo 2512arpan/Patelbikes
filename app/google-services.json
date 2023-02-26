@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "156214153033",
+    "project_id": "patelbike-42039",
+    "storage_bucket": "patelbike-42039.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:156214153033:android:6a6f6e51e8ac57437fd498",
+        "android_client_info": {
+          "package_name": "com.example.patelbike"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "156214153033-09ma0me3bjsp76s4f486cuv6jio9f4ra.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCy8hakSnn5BdzyQ9DXgAOpd0dF4Wz2O9U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "156214153033-09ma0me3bjsp76s4f486cuv6jio9f4ra.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

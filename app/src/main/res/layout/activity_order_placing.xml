@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderPlacingActivity"
+    android:orientation="vertical"
+    android:background="@color/light_gray">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Product Expense"/>
+                <LinearLayout
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/expense"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="300"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="￡"/>
+                </LinearLayout>
+            </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delivery Fee "/>
+        <LinearLayout
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/delivery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="300"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￡"/>
+        </LinearLayout>
+        </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total"/>
+                <LinearLayout
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/total"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="300"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="￡"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:padding="15dp"
+            android:background="@android:color/transparent"/>
+
+            <EditText
+                android:id="@+id/number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mobile Number"
+                android:padding="15dp"
+                android:background="@android:color/transparent"/>
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Delivery Address"
+                android:padding="15dp"
+                android:background="@android:color/transparent"/>
+            <EditText
+                android:id="@+id/cityName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="City/Town name"
+                android:padding="15dp"
+                android:background="@android:color/transparent"/>
+            <EditText
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Post code"
+                android:padding="15dp"
+                android:background="@android:color/transparent"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/card_number"
+            android:layout_marginTop="10dp"
+            android:text="Card Number*"
+            android:textColor="#555555"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_card_number"
+            android:layout_below="@+id/card_number"
+            android:hint=" Card Number"
+            android:inputType="number"
+            android:padding="6dp"
+            android:textSize="16sp"
+            android:background="@drawable/border"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/card_holder"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/editText_card_number"
+            android:text="Card Holder Name*"
+            android:textColor="#555555"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_cardholder_name"
+            android:layout_below="@+id/card_holder"
+            android:hint="Card Holder Name"
+            android:inputType="textPersonName"
+            android:padding="6dp"
+            android:textSize="16sp"
+            android:background="@drawable/border"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/card_expiry"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/editText_cardholder_name"
+            android:text="Expiry*"
+            android:textColor="#555555"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"/>
+
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_expiry"
+            android:layout_below="@+id/card_expiry"
+            android:hint="MM/YY"
+            android:inputType="number"
+            android:padding="6dp"
+            android:textSize="16sp"
+            android:background="@drawable/border"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/card_cvv"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/editText_expiry"
+            android:text="CVV/CVC*"
+            android:textColor="#555555"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"/>
+        <EditText
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_Cvv"
+            android:layout_below="@+id/card_cvv"
+            android:hint="123"
+            android:inputType="number"
+            android:padding="6dp"
+            android:textSize="16sp"
+            android:background="@drawable/border"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+
+               </LinearLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/placeOrder"
+        android:layout_marginTop="10dp"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#165BAA"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:background="@drawable/border">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Place Order"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
